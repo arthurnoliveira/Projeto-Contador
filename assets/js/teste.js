@@ -1,6 +1,11 @@
 var currentNumberWrapper = document.getElementById('currentNumber')
 var currentNumber = 0
 
+function escreverAviso() {
+  console.warn('Aviso!')
+}
+currentNumberWrapper.addEventListener('mouseover', escreverAviso)
+
 function increment() {
   //desabilita botao quando chegar em 15
   if (currentNumber < 15) {
